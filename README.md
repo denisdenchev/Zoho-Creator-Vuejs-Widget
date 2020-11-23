@@ -13,20 +13,19 @@ Let's build a Creator Widget
 
 4. After instalation of Node we have to make sure we have it installed and running. To do so press windows key + r or type "cmd" in the search and open it up. Once you have done that you can run this command  ( node-v ) this will tell you the version of your Nodejs.
 
-1111.png
+
 
 5. Once we have installed node we have nearly quialified to a Senior Developer Position.
 
 6. Now we have to install the Zoho Extension Toolkit (ZET)
 -  npm install -g zoho-extension-toolkit
 Once we have done that the following screen would appear.
-1112.png
 
 7. Let's make sure we have ZET installed correctly.
 In your cmd / CLI run the following command 
 - zet
 The following screen would appear
-1113.png
+
 
 Now as we have installed Nodejs and ZET, lets get another brew and create a project
 
@@ -34,46 +33,46 @@ Now as we have installed Nodejs and ZET, lets get another brew and create a proj
 Create a Project:
 1. Using CLI navigate to the desired destination, where you would like to store your widget / application.
 To move between folders you can use the command "cd folderName" and to move back out of that folder use "cd .."
-1114.png
+
 
 2. As we have masterted travelling back and forth in future, let's run the command to create a new project.
 - In your terminal, in the desired location(folder) run  "zet init" to initialise ZET.
 3.  A list of Zoho Services will be displayed.
 - Select Creator and press Enter
-1115.png
+
 
 4. Now give your project a name and hit Enter
 
-1115.png
+
 
 5. The project has been created. Now navigate to it using cd.
 
-1116.png
+
 
 6. Using "zet run" command will start a local server on your machine, which you would use for development.
 - After navigating to the folder of your project you can type "zet run" in your CLI and  voalá, you have a server, running locally on your machine.
 
-1118.png
+
 
 a. Type your IP address and the port in the web-browser. From there navigate to your "widget.html" file.
 
-1119.png
+
 
 b. And you would see the content of your "widget.html" file.
 
-1120.png
+
 
 
 
 7. Open up the project folder with whatever text editor you are using. I am using VS Code, if you are not... I feel sorry for you...
 Go into App folder and find the "widget.html" file.
-1117.png
+
 
 8. Do your magic, using HTML, CSS  and JavaScript.
 
 Here is a quick example:
 
-1121.png
+
 
 and the Output 
 
@@ -83,7 +82,7 @@ Do not forget to include the creator SDK in your html file
  -> <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
 
 
-1122.png
+
 
 Now go and play with the button, it's good fun.
 
@@ -95,13 +94,13 @@ Let's say we are done with the first phase of developing our widget. Let's now h
 
 - Go to your CLI and run "zet validate". If your server is still running in your CLI you can hit "Ctrl + C" and it will ask you if you would like to cancel and then type "Y" for yes.
 
-1123.png
+
 
 2. Type "zet validate" in the CLI
 
 3. Type "zet pack" in the CLI
 
-1124.png
+
 
 These commands work as follows
 
@@ -116,18 +115,12 @@ zet pack - it literally packs your files in a ".zip" file, which we would need t
 - In your Zoho Creator you need to create a Page ( Widgets can only be used within pages and not forms).
 
 - Edit application -> Open Page Builder 
-1125.png
+
 
 
 
 - Go to Widgets and create new
 
-Screenshot - 2020-11-23T122841.278.png
-
-
-
-
-Screenshot - 2020-11-23T123048.368.png
 
 Give your widget a name
 
@@ -142,8 +135,6 @@ Click on Create.
 5. Once your widget has been created simply drag and drop it onto the page.
 
 Done.
-Screenshot - 2020-11-23T135024.201.png
-
 
 
 Host your widget Externally and use it with Zoho Creator
@@ -151,7 +142,6 @@ Host your widget Externally and use it with Zoho Creator
 
 2. Create your Widget 
 
-Screenshot - 2020-11-23T141750.406.png
 
 Give it a name and URL where your widget is hosted.
 
@@ -169,7 +159,7 @@ Let's talk about data manipulaiton
 
 2. Create a form / report with some fields. See image below for example of the form I have created.
 
-1126.png
+
 
 - As you can see I want to populate these fields with the data that I have filled in.
 
@@ -189,7 +179,6 @@ Fetch data from report
 
 2. Use the simple code below to fetch data from the report you would like.
 
-1127.png
 
 3. Simply create a config object to set the parameters you would like in order to fetch a report. There are more parameters such as number of records to be fetched, number of pages to be fetched, records that are only active, inactive, ect...
 - See zoho Docs for more information -> https://www.zoho.com/creator/newhelp/app-settings/widgets/creator-api-for-widgets.html
